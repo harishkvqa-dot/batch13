@@ -5,5 +5,5 @@ WITH tb1 as(
     id as cust_id,
     first_name,
     last_name
-    from {{source('datafeed_shared_schema','RAW_CUSTOMER')}})
+    from {{source('EM','RAW_CUSTOMER')}})
 select * from tb1

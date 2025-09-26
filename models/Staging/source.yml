@@ -1,6 +1,6 @@
 version: 2
 sources:
-    - name: datafeed_shared_schema
+    - name: EM
       database: "{{('EMP')}}"
       schema: EM
       tables:
