@@ -1,7 +1,7 @@
 version: 2
 sources:
     - name: EM
-      database: "{{('EMP')}}"
-      schema: EM
+      database: "{{('MOVIELENS')}}"
+      schema: RAW
       tables:
         - name: RAW_CUSTOMER
