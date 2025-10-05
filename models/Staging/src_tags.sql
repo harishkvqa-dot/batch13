@@ -1,6 +1,6 @@
-{{ config(materialized = 'view') }}
+--{{ config(materialized = 'view') }}
 
-WITH raw_tags AS (
+WITH raw_tagS AS (
   SELECT * FROM MOVIELENS.RAW.RAW_TAGS
 )
 
@@ -9,4 +9,4 @@ SELECT
   movieId AS movie_id,
   tag,
   TO_TIMESTAMP_LTZ(timestamp) AS tag_timestamp
-FROM raw_tags
+FROM raw_tagS
